@@ -1,0 +1,280 @@
+/*
+Project Name: Blank Template
+Client: Your Client
+Author: Lilly Percival
+Developer @RC in Boston
+Date (started):
+Date (completed):
+*/
+
+
+/*******************************************/
+/* SETUP
+/*******************************************/
+
+/* Box Model Hack */
+ {
+     -moz-box-sizing: border-box; /* Firexfox */
+     -webkit-box-sizing: border-box; /* Safari/Chrome/iOS/Android */
+     box-sizing: border-box; /* IE */
+}
+
+/* Clear fix hack */
+.clearfix:after {
+     content: ".";
+     display: block;
+     clear: both;
+     visibility: hidden;
+     line-height: 0;
+     height: 0;
+}
+
+.clear {
+	clear: both;
+}
+
+.alignright {
+	float: right;
+	padding: 0 0 10px 10px; /* note the padding around a right floated image */
+}
+
+.alignleft {
+	float: left;
+	padding: 0 10px 10px 0; /* note the padding around a left floated image */
+}
+
+/*******************************************/
+/* BASE STYLES
+/*******************************************/
+
+body {
+     color: #000;
+     font-size: 12px;
+     line-height: 1.4;
+     font-family: Helvetica, Arial, sans-serif;
+}
+
+
+/*******************************************/
+/* LAYOUT
+/*******************************************/
+
+/* Center the container */
+#container {
+	width: 960px;
+	margin: auto;
+}
+
+/* ==============================================================================================
+Nick Mkrtchyan
+https://www.facebook.com/sonick.pk
+http://www.Mkrtchyan.zz.mu
+================================================================================================= */
+* {
+    margin: 0;
+    padding: 0;
+}
+.lavellHero{
+  border: 1px solid black;
+  height: 695px;
+  width: 100%;
+  background-color:#7EC0EE;
+
+}
+header {
+    background-color:rgba(126, 192, 238, 0.9);
+    color:#7EC0EE
+    display:block;
+    font: 14px/1.3 Arial,sans-serif;
+    height:50px;
+    position:relative;
+    z-index:5;
+}
+h2{
+    margin-top: 30px;
+    text-align: center;
+}
+header h2{
+    font-size: 22px;
+    margin: 0 auto;
+    padding: 10px 0;
+    width: 80%;
+    text-align: center;
+}
+header a, a:visited {
+    text-decoration:none;
+    color:#7EC0EE;
+}
+
+@keyframes move-twink-back {
+    from {background-position:0 0;}
+    to {background-position:-10000px 5000px;}
+}
+@-webkit-keyframes move-twink-back {
+    from {background-position:0 0;}
+    to {background-position:-10000px 5000px;}
+}
+@-moz-keyframes move-twink-back {
+    from {background-position:0 0;}
+    to {background-position:-10000px 5000px;}
+}
+@-ms-keyframes move-twink-back {
+    from {background-position:0 0;}
+    to {background-position:-10000px 5000px;}
+}
+
+@keyframes move-clouds-back {
+    from {background-position:0 0;}
+    to {background-position:10000px 0;}
+}
+@-webkit-keyframes move-clouds-back {
+    from {background-position:0 0;}
+    to {background-position:10000px 0;}
+}
+@-moz-keyframes move-clouds-back {
+    from {background-position:0 0;}
+    to {background-position:10000px 0;}
+}
+@-ms-keyframes move-clouds-back {
+    from {background-position: 0;}
+    to {background-position:10000px 0;}
+}
+
+.stars, .twinkling, .clouds {
+  position:absolute;
+  top:0;
+  left:0;
+  right:0;
+  bottom:0;
+  width:100%;
+  height:100%;
+  display:block;
+}
+
+.clouds{
+    background:transparent url(http://www.script-tutorials.com/demos/360/images/clouds4.png) repeat top center;
+    z-index:3;
+
+  -moz-animation:move-clouds-back 200s linear infinite;
+  -ms-animation:move-clouds-back 200s linear infinite;
+  -o-animation:move-clouds-back 200s linear infinite;
+  -webkit-animation:move-clouds-back 200s linear infinite;
+  animation:move-clouds-back 200s linear infinite;
+}
+.bigHead{
+  height: 600px;
+  width: auto;
+  z-index: 4;
+  margin: 130px 0 0 15.5%;
+}
+.contactInfo{
+  text-align: center;
+  margin: 70px 0 0 0;
+  font-size: 3em;
+}
+.workArray{
+  border: 1px solid black;
+  height: 450px;
+  width: 100%;
+  background-color: white;
+}
+.displayWork{
+  border: 1px solid black;
+  height: 300px;
+  width: 100%;
+}
+.work{
+  border: 1px solid black;
+  width: 250px;
+  height: 250px;
+  margin: 25px 0 0 2.5%;
+  float: left;
+}
+.skillsSection{
+  height: 600px;
+  width: 100%;
+  floa
+}
+.skillsAttr{
+  border: 1px solid black;
+  height: 500px;
+  width: 30%;
+  margin: 25px 0 0 2.5%;
+  float: left;
+}
+.roundButton{
+  display:block;
+  height: 125px;
+  width: 125px;
+  border-radius: 50%;
+  border: 1px solid red;
+  margin: 190px 0 0 33%;
+}
+footer {
+clear: both;
+}
+
+/*******************************************/
+/* ADDITIONAL STYLES
+/*******************************************/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*******************************************/
+/* MEDIA QUERIES
+/*******************************************/
+
+/*
+  ##Device = Desktops
+  ##Screen = 1281px to higher resolution desktops
+*/
+@media (min-width: 1281px) {
+
+}
+
+
+/*
+  ##Device = Laptops, Desktops
+  ##Screen = B/w 1025px to 1280px
+*/
+@media (min-width: 1025px) and (max-width: 1280px) {
+
+}
+
+
+/*
+  ##Device = Tablets, Ipads (portrait)
+  ##Screen = B/w 768px to 1024px
+*/
+@media (min-width: 768px) and (max-width: 1024px) {
+
+}
+
+
+/*
+  ##Device = Tablets, Ipads (landscape)
+  ##Screen = B/w 768px to 1024px
+*/
+@media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
+
+}
+
+
+/*
+  ##Device = Most of the Smartphones Mobiles (Portrait)
+  ##Screen = B/w 320px to 479px
+*/
+@media (min-width: 320px) and (max-width: 480px) {
+
+}
